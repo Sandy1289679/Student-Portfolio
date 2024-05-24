@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+        width:100vw;
+        height:8vw;
+        border: 1px solid black;
+        display: flex;
+        justify-content: end;
+        flex-wrap: wrap;
+        gap: 10;
+        font-size:35px;
+        background-color: rgb(17, 120, 120);
+        
+        
+    }
+    .container #ab{
+        padding-right: 50px;
+    }
+    .container a{
+        padding-left: 50px;
+        padding-top:5vw ;
+        text-decoration: none;
+    }
+        .log{
+            position: relative;
+            display: flex;
+            height: 35vw;
+            width:100vw;
+            border: solid;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(168, 160, 160);
+
+        }
+
+        form{
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 5px;
+            height:fit-content;
+            width:fit-content;
+            border: solid;
+            align-items: center;
+            justify-content: start;
+            background-color: rgb(82, 82, 135);
+            z-index: 12;
+            
+        }
+        #em{
+            margin-top: 30px;
+            font-size: 25px;
+        }
+        #pas{
+            font-size: 25px;
+            margin-top: 20px;
+        }
+        input[type=submit]{
+            font-size: 20px;
+            margin-top: 30px;
+
+        }
+        img{
+            position: absolute;
+            width: 100%;
+            height:100%;
+            object-fit: cover;
+            filter: contrast(0.3);
+        }
+     </style>
+   
+</head>
+<body>
+    <div class="container">
+        <a href="./about.html" >about</a>
+        <a href="./login.html " >login</a>
+        <a id="ab" href="./signup.html ">signup</a>
+        </div>
+   <div class="log">
+         
+        <form action="https://formsubmit.co/sandeepdommeti2005@gmail.com" method="POST">
+        <h1>login</h1>
+        <div id="em">
+        <label>Email</label>
+        <input type="email" name="mail" required/><br>
+        </div>
+        <div id="pas">
+        <label >password</label>
+        <input type="text" name="password" require/><br>
+        </div>
+        <div id="login">
+        <input type="submit" name="login">
+        </div>
+        
+    </form>
+    <img src="./a.png" alt="img"/>
+   </div>
+  
+
+    
+</body>
+</html>

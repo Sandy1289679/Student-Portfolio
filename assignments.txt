@@ -1,0 +1,5 @@
+<!-- Sign Up Form | name, password, email, phn -->
+    
+- Style the Form
+- Table
+-webdev

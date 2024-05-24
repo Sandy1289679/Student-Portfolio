@@ -1,0 +1,52 @@
+
+<!-- New Employee Enrollment Form | Text, Email, Tel, Password, Radio, Checkbox, List, TextArea, Submit, Reset, Date -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            border: solid;
+        }
+    </style>
+</head>
+<body> 
+    <form>
+        <h1>New Employee Enrollment Form</h1>
+        <label>emp name</label>
+        <input type="text" name="emp name" maxlength="12" required/><br>
+        <label>Email</label>
+        <input type="email" name="mail" required/><br>
+        <label >phn num</label>
+        <input type="tel" name="num" require/><br>
+        <label>password</label>
+        <input type="password" name="password" requirted/><br>
+        <label>gender</label>
+        <input type="radio" name="gender" value="male"/><span>male</span>
+        <input type="radio" name="gender" value="female"/><span>female</span><br>
+        <label>country</label>
+        <select name="country" >
+            <option value="select">select</option>
+            <option value="in">india</option>
+            <option value="NZ">NZ</option>
+            <option value="BAN">BAN</option>
+        </select><br>
+        <label>skills</label><br>
+        <input type="checkbox" name="C" value="C"/><span>C</span><br>
+        <input type="checkbox" name="C++" value="C++"/><span>C++</span><br>
+        <input type="checkbox" name="java" value="java"/><span>java</span><br>
+        <input type="checkbox" name="python" value="python"/><span>python</span><br>
+<br>
+<label>Description</label><br>
+<textarea name="Description" row="30" cols="60"></textarea><br>
+        <input type="reset" value="reset"/>
+        <input type="submit" value="submit"/>
+
+
+
+    </form>
+</body>
+</html>
