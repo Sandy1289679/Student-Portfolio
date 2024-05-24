@@ -1,5 +1,36 @@
-<!-- Sign Up Form | name, password, email, phn -->
-    
-- Style the Form
-- Table
--webdev
+- Portfolio
+
+sections
+---------
+1. Home
+2. About
+3. Projects
+4. Skills
+5. Contact
+6. Gallery
+
+
+Home
+- Title
+- Role
+- image
+- resume
+- contact btn
+
+About
+- intro
+- hobbies
+- achievements
+
+Projects
+- calculator
+- Masonary Image Gallery
+
+Skills
+- soft & hard Skills
+
+Contact
+
+- email, phn no
+- social media
+
