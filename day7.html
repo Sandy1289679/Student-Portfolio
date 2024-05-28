@@ -4,8 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        
+        .box{
+            height: 10vw;
+            width: 10vw;
+            
+            background-color: aqua;
+            animation: sandeep;
+            animation-duration: 2s; 
+            animation-fill-mode: forwards;
+            /* animation-iteration-count: infinite; */
+
+        }
+
+        @keyframes sandeep {
+            0%{
+                background-color: red;
+                font-size: 20vw;
+            }
+            100%{
+                background-color: green;
+                font-size: 10vw;
+                
+            }
+        }
+
+        .box:hover{
+            /* animation: rubberBand;
+            animation-duration: 2s;  */
+        }
+        
+        
+    </style>
 </head>
 <body>
-    Day 7
+    <div class="box ">Box</div>
 </body>
 </html>

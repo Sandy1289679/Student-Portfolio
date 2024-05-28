@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <title>Gallery</title>
+    <style>
+      .gallery-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .image-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 4vw;
+      }
+
+      .image-container div {
+        position: relative;
+        display: flex;
+        align-items: end;
+        justify-content: center;
+        animation: fadeInUp 1s;
+        transition: all 0.5s ease;
+      }
+
+      .image-container div:hover{
+        transform: scale(1.03);        
+    }
+
+      .image-container img {
+        width: 20vw;
+        height: 20vw;
+        object-fit: cover;
+        border-radius: 10px;
+      }
+
+      .image-container p {
+        position: absolute;
+        z-index: 10;
+        padding: 0.5vw 2vw;
+        border-radius: 10px;
+        background: #000000b8;
+        color: whitesmoke;
+        width: 50%;
+        text-align: center;
+      }
+
+      .image-container div:nth-child(0){
+        animation-delay: 0s;
+      }
+
+      .image-container div:nth-child(1){
+        animation-delay: 0.2s;
+      }
+
+      .image-container div:nth-child(2){
+        animation-delay: 0.4s;
+      }
+
+      .image-container div:nth-child(3){
+        animation-delay: 0.6s;
+      }
+
+      .image-container div:nth-child(4){
+        animation-delay: 0.8s;
+      }
+
+      .image-container div:nth-child(5){
+        animation-delay: 1s;
+      }
+
+      .image-container div:nth-child(6){
+        animation-delay: 1.2s;
+      }
+
+      .image-container div:nth-child(7){
+        animation-delay: 1.4s;
+      }
+
+      .image-container div:nth-child(8){
+        animation-delay: 1.6s;
+      }
+
+      @media screen and (max-width: 768px) {
+        .image-container {
+          grid-template-columns: repeat(1, 1fr);
+        }
+        .image-container img {
+          width: 80vw;
+          height: 60vw;
+        }
+      }
+
+      @media screen and (min-width: 768px) and (max-width: 1000px) {
+        .image-container {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        .image-container img {
+          width: 30vw;
+          height: 30vw;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="gallery-container">
+      <h1>Gallery</h1>
+      <div class="image-container">
+        <div>
+          <p>Title</p>
+          <img src="./a.png" alt="cat" />
+        </div>
+        <div>
+          <p>Title</p>
+          <img src="./a.png" alt="cat" />
+        </div>
+        <div>
+          <p>Title</p>
+          <img src="./a.png" alt="cat" />
+        </div>
+        <div>
+          <p>Title</p>
+          <img src="./a.png" alt="cat" />
+        </div>
+        <div>
+          <p>Title</p>
+          <img src="./a.png" alt="cat" />
+        </div>
+        <div>
+          <p>Title</p>
+          <img src="./a.png" alt="cat" />
+        </div>
+        <div>
+          <p>Title</p>
+          <img src="./a.png" alt="cat" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
